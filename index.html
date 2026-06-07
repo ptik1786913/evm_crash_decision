@@ -457,18 +457,6 @@ function render(){
       }
     }
   }
-
-  // 註解底部文字
-  const noteTextEl = document.getElementById('note-text');
-  if (noteTextEl) {
-    noteTextEl.innerHTML = `
-      * <strong>精密時程除錯版更新說明：</strong><br>
-      1. <strong>致命語法除錯（Bug Fixed）</strong>：完美修復了原本在抓取輸入欄位時錯誤的括號鏈語法，消滅了導致網頁後半段全部死白、無法渲染的元件阻斷地雷。<br>
-      2. <strong>結構防禦優化</strong>：為所有 DOM 節點注入操作加上了安全防禦判斷（<code>if (element)</code>），確保程式碼在任何瀏覽器環境與極端數值變動下，100% 穩定輸出底部的「核心財務決策分析」與「決策建議聖旨牌」。
-    `;
-  }
-}
-
 // 監聽器綁定
 ['cur-day','total-day','pv','ev','ac','bac','bonus','penalty'].forEach(id=>{
   const el = document.getElementById(id);
